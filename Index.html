@@ -182,6 +182,13 @@
                     <h2 class="text-3xl font-bold text-slate-800">Insights & Analysis</h2>
                     <p class="text-lg text-slate-500 mt-2">Commentary on Tuberculosis and Linkage to Care</p>
                 </div>
+
+                <!--
+                PART 1: THE BLOG TRIGGER BUTTONS ARE LOCATED HERE.
+                Notice the `data-modal-target="blog-modal-1"` attribute.
+                This tells the JavaScript which modal to open when this button is clicked.
+                The ID must match the ID of the modal container below.
+                -->
                 <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
                     <div class="bg-white p-6 rounded-lg shadow-md flex flex-col">
                         <h3 class="text-xl font-semibold text-slate-800 mb-3">The Critical First Step: Why Rapid TB Diagnosis is Key to Care</h3>
@@ -233,11 +240,84 @@
          </div>
     </footer>
     
-    <!-- Blog Modals (Content is the same, no need to repeat full code) -->
-    <div id="blog-modal-1" class="modal fixed w-full h-full top-0 left-0 flex items-center justify-center hidden"><div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div><div class="modal-content bg-white w-11/12 md:max-w-2xl mx-auto rounded-lg shadow-lg z-50 overflow-y-auto" style="max-height: 90vh;"><div class="py-4 text-left px-6"><div class="flex justify-between items-center pb-3"><p class="text-2xl font-bold text-slate-800">The Critical First Step</p><button class="modal-close cursor-pointer z-50"><svg class="fill-current text-black" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"><path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path></svg></button></div><div class="text-slate-600 space-y-4">...</div></div></div></div>
-    <div id="blog-modal-2" class="modal fixed w-full h-full top-0 left-0 flex items-center justify-center hidden">...</div>
-    <div id="blog-modal-3" class="modal fixed w-full h-full top-0 left-0 flex items-center justify-center hidden">...</div>
-    <div id="blog-modal-5" class="modal fixed w-full h-full top-0 left-0 flex items-center justify-center hidden">...</div>
+    <!--
+    PART 2: THE BLOG MODAL (POP-UP) CONTENT IS LOCATED HERE.
+    This section contains the hidden divs for each blog post.
+    Notice the `id="blog-modal-1"` matches the `data-modal-target` from the button above.
+    This is how the JavaScript knows which content to show.
+    -->
+    <div id="blog-modal-1" class="modal fixed w-full h-full top-0 left-0 flex items-center justify-center hidden">
+        <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+        <div class="modal-content bg-white w-11/12 md:max-w-2xl mx-auto rounded-lg shadow-lg z-50 overflow-y-auto" style="max-height: 90vh;">
+            <div class="py-4 text-left px-6">
+                <div class="flex justify-between items-center pb-3">
+                    <p class="text-2xl font-bold text-slate-800">The Critical First Step: Why Rapid TB Diagnosis is Key to Care</p>
+                    <button class="modal-close cursor-pointer z-50">
+                        <svg class="fill-current text-black" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"><path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path></svg>
+                    </button>
+                </div>
+                <div class="text-slate-600 space-y-4">
+                    <p>The journey to successful Tuberculosis (TB) treatment begins with a single, crucial event: diagnosis. For too long, this first step has been a bottleneck, with traditional testing methods taking days or even weeks to yield results. This delay, known as initial loss to follow-up, is a major challenge in TB control, as patients can transmit the disease further or see their own health deteriorate before treatment even begins.</p>
+                    <p>Fortunately, the landscape is changing. The World Health Organization (WHO) now recommends rapid molecular diagnostics, like the Xpert MTB/RIF and Truenat assays, as the initial test for anyone showing signs of TB. These tests are game-changers. They can confirm a TB diagnosis and detect resistance to key drugs within hours, not weeks. This allows healthcare workers to make informed decisions immediately.</p>
+                    <p>In a high-burden country like South Africa, implementing these point-of-care tests more broadly is essential. By reducing the time between testing and diagnosis, we dramatically shrink the window where a patient can be lost to the system. This rapid turnaround empowers us to initiate treatment promptly, improving patient outcomes and breaking the chains of transmission in our communities. It is the critical first step in ensuring every diagnosed patient is successfully linked to life-saving care.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="blog-modal-2" class="modal fixed w-full h-full top-0 left-0 flex items-center justify-center hidden">
+        <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+        <div class="modal-content bg-white w-11/12 md:max-w-2xl mx-auto rounded-lg shadow-lg z-50 overflow-y-auto" style="max-height: 90vh;">
+            <div class="py-4 text-left px-6">
+                <div class="flex justify-between items-center pb-3">
+                    <p class="text-2xl font-bold text-slate-800">Bridging the Gap: The Role of Community Health Workers</p>
+                    <button class="modal-close cursor-pointer z-50">
+                        <svg class="fill-current text-black" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"><path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path></svg>
+                    </button>
+                </div>
+                <div class="text-slate-600 space-y-4">
+                    <p>In the complex healthcare landscape of South Africa, Community Health Workers (CHWs) are the indispensable connectors. They are trusted members of the communities they serve, making them uniquely positioned to bridge the gap between clinics and patients' homes. When it comes to TB, their role in facilitating linkage to care is nothing short of heroic.</p>
+                    <p>CHWs are often the first point of contact for individuals who may be hesitant to visit a formal health facility. Through active surveillance, contact tracing, and household visits, they identify potential TB cases and encourage screening. Once a diagnosis is made, their work becomes even more critical. They provide essential health education, demystify the treatment process, and address the fears and misconceptions that can prevent a patient from starting their medication.</p>
+                    <p>Their support is both practical and emotional. A CHW might help a patient navigate the clinic system, arrange transport, or simply offer a compassionate ear. By building trust and providing consistent follow-up, they ensure that a positive test result translates into an active treatment plan. Investing in and empowering our CHW workforce is a direct investment in the health of our communities and a proven strategy to strengthen the TB care cascade.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="blog-modal-3" class="modal fixed w-full h-full top-0 left-0 flex items-center justify-center hidden">
+        <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+        <div class="modal-content bg-white w-11/12 md:max-w-2xl mx-auto rounded-lg shadow-lg z-50 overflow-y-auto" style="max-height: 90vh;">
+            <div class="py-4 text-left px-6">
+                <div class="flex justify-between items-center pb-3">
+                    <p class="text-2xl font-bold text-slate-800">Digital Health on the Frontline: SMS and Apps to Support Patients</p>
+                    <button class="modal-close cursor-pointer z-50">
+                        <svg class="fill-current text-black" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"><path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path></svg>
+                    </button>
+                </div>
+                <div class="text-slate-600 space-y-4">
+                    <p>As mobile phone penetration soars across South Africa, digital health technologies present a powerful, scalable solution to improve linkage to TB care. These tools are no longer futuristic concepts; they are practical interventions being deployed on the frontlines to support patients and healthcare workers alike.</p>
+                    <p>Simple Short Message Service (SMS) notifications are proving highly effective. An automated text message can remind a patient of their clinic appointment, inform them that their test results are ready, or provide encouraging words to motivate them to start treatment. This consistent communication helps keep patients engaged with the health system during the vulnerable period after diagnosis.</p>
+                    <p>Beyond SMS, more sophisticated mobile applications and platforms offer even greater support. Digital Adherence Technologies (DATs), such as smart pillboxes or video-observed therapy (VOT), can help monitor treatment adherence from afar. These innovations not only support the patient but also provide valuable data for M&E professionals, allowing for real-time tracking and targeted interventions for those who need extra help. By embracing these digital tools, we can create a more responsive and efficient TB care system.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="blog-modal-5" class="modal fixed w-full h-full top-0 left-0 flex items-center justify-center hidden">
+        <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+        <div class="modal-content bg-white w-11/12 md:max-w-2xl mx-auto rounded-lg shadow-lg z-50 overflow-y-auto" style="max-height: 90vh;">
+            <div class="py-4 text-left px-6">
+                <div class="flex justify-between items-center pb-3">
+                    <p class="text-2xl font-bold text-slate-800">Patient-Centered Pathways: Redesigning Systems for Better Linkage</p>
+                    <button class="modal-close cursor-pointer z-50">
+                        <svg class="fill-current text-black" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"><path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path></svg>
+                    </button>
+                </div>
+                <div class="text-slate-600 space-y-4">
+                    <p>For a patient newly diagnosed with TB, the healthcare system can feel fragmented and difficult to navigate. A diagnosis at a hospital might not automatically connect them to their local primary care clinic for treatment. This system-level failure is a significant driver of initial loss to follow-up. To improve linkage to care, we must move beyond individual interventions and redesign the pathways themselves to be inherently patient-centered.</p>
+                    <p>An integrated data system is fundamental. When laboratory results, pharmacy records, and TB registers speak to each other, as aimed for with systems like the Provincial Health Data Centre (PHDC), we create a single, continuous patient record. This allows healthcare workers at different facilities to see the complete picture and proactively identify patients who have been diagnosed but have not yet started treatment.</p>
+                    <p>Furthermore, integrating TB and HIV services is crucial. Since co-infection is common, providing a "one-stop shop" where patients can receive care for both conditions reduces the travel burden and number of appointments, making it easier for them to stay engaged. By focusing on streamlining these processes—improving record-keeping, strengthening inter-facility communication, and integrating services—we can build a health system that actively guides patients toward care, rather than leaving them to find their own way.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
